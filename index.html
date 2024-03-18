@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foreach Array</title>
+</head>
+<body>
+    <button onclick="sayHello()">Click me</button>
+    <h1 id="demo"></h1>
+
+    <script>
+        function sayHello() {
+            var studentNames = ['John', 'Alice', 'Bob', 'Eve', 'Leang', 'Kadan', 'Enghour', 'Samnang', 'Sambo', 'Vath'];
+            var greetings = [];
+
+            studentNames.forEach(function (name) {
+                greetings.push('Hello ' + name);
+            });
+
+            document.getElementById("demo").innerHTML = greetings.join('<br>');
+        }
+    </script>
+</body>
+</html>
